@@ -1,0 +1,21 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Create Student</h3>
+    <form (ngSubmit)="onSubmit()" class="student-form">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="Name" [(ngModel)]="student.name" name="Name">
+        </div>
+
+        <div class="form-group">
+            <label>CIN</label>
+            <input type="text" class="form-control" id="CIN" [(ngModel)]="student.cin" name="CIN">
+        </div>
+
+        <div class="form-group">
+            <label>Level</label>
+            <input type="text" class="form-control" id="level" [(ngModel)]="student.level" name="level">
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>

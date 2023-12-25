@@ -1,0 +1,18 @@
+<h3>View Student Details</h3>
+<div *ngIf="student" class="view-student-details">
+    <div class="detail-row">
+        <label>Name:</label>
+        <span>{{ student.name }}</span>
+    </div>
+    <div class="detail-row">
+        <label>CIN:</label>
+        <span>{{ student.cin }}</span>
+    </div>
+    <div class="detail-row">
+        <label>Level:</label>
+        <span>{{ student.level }}</span>
+    </div>
+
+    
+    <button class="btn btn-info" (click)="goBack()">Go Back</button>
+</div>
